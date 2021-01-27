@@ -33,10 +33,6 @@ const Meta = () => (
       <meta
         key="og:image"
         name="og:image"
-        property="og:image:type" content="image/png"
-        property="og:image:width" content="224"
-        property="og:image:height" content="256"
-        property="og:description" content="Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine."
         content={MY_SEO.openGraph.image}
       />
     </Head>
