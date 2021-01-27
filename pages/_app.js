@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }) {
         url={MY_SEO.openGraph.url}
         title={MY_SEO.openGraph.title}
         keywords={MY_SEO.openGraph.keywords}
-        image={MY_SEO.openGraph.image}
+        image={db.bg}
           />
       <ThemeProvider theme={theme}>
         <GlobalStyle />
