@@ -4,7 +4,7 @@ import { MY_SEO } from '../../config/config';
 const Meta = () => (
     <Head>
       <title key="title">{MY_SEO.title}</title>  
-      <meta
+      {/* <meta
         key="og:type"
         name="og:type"
         content={MY_SEO.openGraph.type}
@@ -33,8 +33,13 @@ const Meta = () => (
         key="og:url"
         name="og:url"
         content={MY_SEO.openGraph.url}
-      />
-
+      /> */}
+      <meta property="og:image" content={MY_SEO.openGraph.image} />
+      <meta property="og:image:secure_url" content={MY_SEO.openGraph.image} />
+      <meta property="og:image:alt" content="NodeJS"/>
+      <meta property="og:image:type" content="image/jpg"/>
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:title" content="Quiz Nodejs"/>
       <meta name="twitter:site" content="@thilourenco"/>
@@ -43,12 +48,7 @@ const Meta = () => (
       <meta name="twitter:image:src" content={MY_SEO.openGraph.image} />
       <meta name="twitter:image:alt" content="NodeJS"/>    
 
-      <meta property="og:image" content={MY_SEO.openGraph.image} />
-      <meta property="og:image:secure_url" content={MY_SEO.openGraph.image} />
-      <meta property="og:image:alt" content="NodeJS"/>
-      <meta property="og:image:type" content="image/jpg"/>
-      <meta property="og:image:width" content="1200"/>
-      <meta property="og:image:height" content="630"/>
+      
 
     </Head>
 );
