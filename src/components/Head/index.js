@@ -34,12 +34,7 @@ const Meta = () => (
         name="og:url"
         content={MY_SEO.openGraph.url}
       />
-      <meta
-        key="og:image"
-        name="og:image"
-        content={MY_SEO.openGraph.image}
-      />
-
+      
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:title" content="Quiz Nodejs"/>
       <meta name="twitter:site" content="@thilourenco"/>
