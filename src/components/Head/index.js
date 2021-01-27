@@ -34,19 +34,19 @@ const Meta = () => (
         name="og:url"
         content={MY_SEO.openGraph.url}
       /> */}
-      <meta property="og:image" content={MY_SEO.openGraph.image} />
-      <meta property="og:image:secure_url" content={MY_SEO.openGraph.image} />
-      <meta property="og:image:alt" content="NodeJS"/>
-      <meta property="og:image:type" content="image/jpg"/>
-      <meta property="og:image:width" content="1200"/>
-      <meta property="og:image:height" content="630"/>
-      <meta name="twitter:card" content="summary_large_image"/>
-      <meta name="twitter:title" content="Quiz Nodejs"/>
-      <meta name="twitter:site" content="@thilourenco"/>
-      <meta name="twitter:creator" content="@thilourenco"/>
-      <meta name="twitter:image" content={MY_SEO.openGraph.image} />
-      <meta name="twitter:image:src" content={MY_SEO.openGraph.image} />
-      <meta name="twitter:image:alt" content="NodeJS"/>    
+      <meta key="og:image" property="og:image" content={MY_SEO.openGraph.image} />
+      <meta key="og:image:secure_url" property="og:image:secure_url" content={MY_SEO.openGraph.image} />
+      <meta key="og:image:alt" property="og:image:alt" content="NodeJS"/>
+      <meta key="og:image:type" property="og:image:type" content="image/jpg"/>
+      <meta key="og:image:width" property="og:image:width" content="1200"/>
+      <meta key="og:image:height" property="og:image:height" content="630"/>
+      <meta key="twitter:card" name="twitter:card" content="summary_large_image"/>
+      <meta key="twitter:title" name="twitter:title" content="Quiz Nodejs"/>
+      <meta Key="twitter:site" name="twitter:site" content="@thilourenco"/>
+      <meta Key="twitter:creator" name="twitter:creator" content="@thilourenco"/>
+      <meta Key="twitter:image" name="twitter:image" content={MY_SEO.openGraph.image} />
+      <meta Key="twitter:image:src" name="twitter:image:src" content={MY_SEO.openGraph.image} />
+      <meta Key="twitter:image:alt" name="twitter:image:alt" content="NodeJS"/>    
 
       
 
