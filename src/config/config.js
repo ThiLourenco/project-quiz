@@ -6,6 +6,7 @@ export const MY_SEO = {
       url: 'https://project-quiz.thilourenco.vercel.app/',
       title: 'Quiz NodeJS',
       description: 'Quiz NodeJS - Imersão React Nextjs',
-      image: 'https://nodejs.org/static/images/logo-hexagon-card.png', // credits: https://nodejs.org/en/
+      keywords: 'Quiz NodeJS - Imersão React NextJs',
+      image: 'https://grozav.com/content/images/2020/04/green-forest-road.jpg', // credits: https://nodejs.org/en/
   }
 };

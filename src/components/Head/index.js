@@ -3,17 +3,21 @@ import { MY_SEO } from '../../config/config';
 
 const Meta = () => (
     <Head>
-      <title key="title">{MY_SEO.title}</title>
-
+      <title key="title">{MY_SEO.title}</title>  
+      <meta
+        key="og:type"
+        name="og:type"
+        content={MY_SEO.openGraph.type}
+      />
       <meta
         key="description"
         name="description"
         content={MY_SEO.description}
       />
       <meta
-        key="og:type"
-        name="og:type"
-        content={MY_SEO.openGraph.type}
+        key="keywords"
+        name="keywords"
+        content={MY_SEO.keywords}
       />
       <meta
         key="og:title"
