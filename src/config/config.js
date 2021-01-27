@@ -1,4 +1,4 @@
-export const MY_SEO = {
+const MY_SEO = {
   title: 'NodeJS Quiz',
   description: 'Quiz NodeJS - Imersão React NextJS',
   openGraph: {
@@ -11,3 +11,5 @@ export const MY_SEO = {
 
   }
 };
+
+export default MY_SEO;
