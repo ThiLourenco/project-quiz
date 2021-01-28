@@ -1,9 +1,13 @@
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubConer from '../src/components/GitHubCorner'
+// eslint-disable-next-line import/no-named-as-default
+import Widget from '../src/components/Widget';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubConer from '../src/components/GitHubCorner';
 
 // const BackgroundImage = styled.div `
 //   background-image: url(${db.bg});
@@ -23,9 +27,10 @@ export const QuizContainer = styled.div`
   }
 `;
 
-
-
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -38,7 +43,28 @@ export default function Home() {
             <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
-
+        <form onSubmit={function (e) {
+          e.preventDefault();
+          router.push(`/quiz?name=${name}`);
+          console.log('fazendo uma submissão com react');
+        }}
+        >
+          <input
+            onChange={function (e) {
+              // state
+              // name = e.target.value;
+              setName(e.target.value);
+            }}
+            placeholder="Informe o seu nome"
+          />
+          <button
+            type="submit"
+            disabled={name.length === 0}
+          >
+            Jogar
+            {name}
+          </button>
+        </form>
         <Widget>
           <Widget.Header>
             <h1>Quiz da Galera</h1>
@@ -52,5 +78,5 @@ export default function Home() {
       </QuizContainer>
       <GitHubConer projectUrl="https://github.com/ThiLourenco" />
     </QuizBackground>
-  )
+  );
 }
