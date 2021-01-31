@@ -16,6 +16,18 @@
       ]
     },
     {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Como fazer um seletor por id via CSS?",
+      "description": "Essa é pra aquecer",
+      "answer": 1,
+      "alternatives": [
+        "x",
+        "y",
+        "z",
+        "c"
+      ]
+    },
+    {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
       "title": "Como fazer um background gradiente com css?",
       "description": "Faz tempo em haha",
