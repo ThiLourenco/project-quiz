@@ -49,20 +49,6 @@ function ResultWidget({ results }) {
   );
 }
 
-// function LoadingWidget() {
-//   return (
-//     <Widget>
-//       <Widget.Header>
-//         Carregando...
-//       </Widget.Header>
-
-//       <Widget.Content>
-//         [Desafio do Loading]
-//       </Widget.Content>
-//     </Widget>
-//   );
-// }
-
 function QuestionWidget({
   question,
   questionIndex,
