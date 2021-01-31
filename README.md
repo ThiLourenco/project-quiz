@@ -10,8 +10,8 @@ Node Quiz - É um projeto feito para testar seus conhecimentos sobre NodeJS.
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [React](https://reactjs.org)
-- [Nextjs](https://nextjs.org/)
+- [ReactJs](https://reactjs.org)
+- [NextJs](https://nextjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [Frame Motion](https://www.framer.com/motion/)
 - [Lottie](https://lottiefiles.com/)
@@ -36,7 +36,7 @@ $ git clone https://github.com/ThiLourenco/project-quiz.git
 Entre na pasta
 
 ```bash
-$ cd nodequiz
+$ cd project-quiz
 ```
 Instale as dependências
 
