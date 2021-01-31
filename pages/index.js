@@ -10,13 +10,7 @@ import Footer from '../src/components/Footer';
 import GitHubConer from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
-
-// const BackgroundImage = styled.div `
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import Link from '../src/components/Link';
 
 export default function Home() {
   const router = useRouter();
@@ -55,7 +49,26 @@ export default function Home() {
           </Widget.Header>
 
           <Widget.Content>
-            <p>lorem ipsum dolor sit amet...</p>
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <li key={linkExterno}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                      {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />

@@ -1,7 +1,7 @@
 {
   "bg": "https://grozav.com/content/images/2020/04/green-forest-road.jpg",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Quiz Nodejs",
+  "description": "Teste os seus conhecimentos sobre Nodejs",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -39,7 +39,8 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {
