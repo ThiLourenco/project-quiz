@@ -1,9 +1,12 @@
 // eslint-disable-next-line import/no-named-as-default
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Footer from '../src/components/Footer';
@@ -18,32 +21,57 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>
+          {db.title}
+        </title>
+      </Head>
       <QuizContainer>
-        <Widget>
+        <QuizLogo />
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
+
           <Widget.Header>
             <h1>Quiz Nodejs</h1>
           </Widget.Header>
 
           <Widget.Content>
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>{db.description}</p> 
+            <form onSubmit={function (e) {
+              e.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <Input
+                name="NomeDoCampo"
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Informe o seu nome"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length <= 0}>
+                {`Jogar ${name}`}
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
-        <form onSubmit={function (e) {
-          e.preventDefault();
-          router.push(`/quiz?name=${name}`);
-        }}
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
         >
-          <Input
-            name="NomeDoCampo"
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Informe o seu nome"
-            value={name}
-          />
-          <Button type="submit" disabled={name.length <= 0}>
-            {`Jogar ${name}`}
-          </Button>
-        </form>
-        <Widget>
           <Widget.Header>
             <h1>Quiz da Galera</h1>
           </Widget.Header>
@@ -71,7 +99,16 @@ export default function Home() {
             </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer 
+          as={motion.footer}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubConer projectUrl="https://github.com/ThiLourenco" />
     </QuizBackground>
