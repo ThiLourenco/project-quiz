@@ -8,6 +8,7 @@ import QuizContainer from '../../src/components/QuizContainer';
 import Button from '../../src/components/Button';
 import AlternativesForm from '../../src/components/AlternativeForm';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
+import LoadingWidget from '../../src/components/LoadingWidget';
 
 function ResultWidget({ results }) {
   return (
@@ -29,7 +30,7 @@ function ResultWidget({ results }) {
           }, 0) */}
           {results.filter((x) => x).length}
           {' '}
-          perguntas:
+          pergunta(s) de 10 !!
         </p>
         <ul>
           {results.map((result, index) => (
@@ -44,23 +45,25 @@ function ResultWidget({ results }) {
           ))}
         </ul>
       </Widget.Content>
+      <BackLinkArrow href="/" />
+      Home
     </Widget>
   );
 }
 
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
+// function LoadingWidget() {
+//   return (
+//     <Widget>
+//       <Widget.Header>
+//         Carregando...
+//       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
-      </Widget.Content>
-    </Widget>
-  );
-}
+//       <Widget.Content>
+//         [Desafio do Loading]
+//       </Widget.Content>
+//     </Widget>
+//   );
+// }
 
 function QuestionWidget({
   question,
@@ -112,7 +115,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 2800);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {

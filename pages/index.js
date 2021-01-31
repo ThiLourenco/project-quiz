@@ -75,8 +75,8 @@ export default function Home() {
           <Widget.Header>
             <h1>Quiz da Galera</h1>
           </Widget.Header>
-
           <Widget.Content>
+            <p>Veja mais alguns quizes que a gelera da Imersão NextJS preparou para você:</p>
             <ul>
               {db.external.map((linkExterno) => {
                 const [projectName, githubUser] = linkExterno

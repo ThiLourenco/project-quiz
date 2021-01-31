@@ -8,6 +8,7 @@ import QuizContainer from '../../components/QuizContainer';
 import Button from '../../components/Button';
 import AlternativesForm from '../../components/AlternativeForm';
 import BackLinkArrow from '../../components/BackLinkArrow';
+import LoadingWidget from '../../components/LoadingWidget';
 
 function ResultWidget({ results }) {
   return (
@@ -48,19 +49,19 @@ function ResultWidget({ results }) {
   );
 }
 
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
+// function LoadingWidget() {
+//   return (
+//     <Widget>
+//       <Widget.Header>
+//         Carregando...
+//       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
-      </Widget.Content>
-    </Widget>
-  );
-}
+//       <Widget.Content>
+//         [Desafio do Loading]
+//       </Widget.Content>
+//     </Widget>
+//   );
+// }
 
 function QuestionWidget({
   question,
