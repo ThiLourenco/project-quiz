@@ -1,40 +1,122 @@
 {
   "bg": "https://grozav.com/content/images/2020/04/green-forest-road.jpg",
-  "title": "Quiz Nodejs",
-  "description": "Teste os seus conhecimentos sobre Nodejs",
+  "title": "NodeJS Quiz - Thiago Lourenço",
+  "description": "Teste os seus conhecimentos sobre NodeJS:",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://media.giphy.com/media/fxI9bA67DZwp3Un78g/giphy.gif",
+      "title": "O que é NodeJS ?",
+      "description": "Essa é pra aquecer...",
+      "answer": 3,
+      "alternatives": [
+        "Um Framework JavaScript",
+        "Uma Linguagem de programação back-end",
+        "Biblioteca back-end e front-end",
+        "É um ambiente de execução de código JavaScript"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/gFPjQ5FmziQVsvexLt/giphy.gif",
+      "title": "É correto afirmar que o NodeJS é:",
+      "description": "",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Síncrono orientado a eventos",
+        "Assíncrono orientado a objeto",
+        "Assíncrono orientado a eventos",
+        "Síncrono orientado a objetos"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 1,
-      "alternatives": [
-        "x",
-        "y",
-        "z",
-        "c"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/KzVPGl00UFTqo974bS/giphy.gif",
+      "title": "O NodeJS trabalha com quantas thread?",
+      "description": "xi...",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Uma",
+        "Duas",
+        "Cinco",
+        "Três"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xT9IgLlH1bHluWxsB2/giphy.gif",
+      "title": "Que nome era dado para o uso exagerado dos chamados callbacks?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "async-await",
+        "callbacks good",
+        "callbacks hell",
+        "callbacks sky"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/26his8ERHOSxKuWw8/giphy.gif",
+      "title": "É um Gerenciador de pacotes do NodeJS:",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Composer",
+        "NPN",
+        "NPM",
+        "NPV"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
+      "title": "Qual é a engine por trás do NodeJS?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Motor v6",
+        "Motor v8",
+        "Motor 12",
+        "Motor v5"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/10zxDv7Hv5RF9C/giphy.gif",
+      "title": "O NodeJS é escrito por algumas linguagem uma delas é:",
+      "description": "xiiiii....",
+      "answer": 3,
+      "alternatives": [
+        "Java",
+        "Go",
+        "Ruby",
+        "C++"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/QHE5gWI0QjqF2/giphy.gif",
+      "title": "O NodeJS pode ser utilizado para construção de ferramentas de CLI?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Sim",
+        "Não"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/2xPPojqe3mraUXS6dk/giphy.gif",
+      "title": "O NodeJS surgiu em:",
+      "description": "Faz tempo em hahaha",
+      "answer": 3,
+      "alternatives": [
+         "1999",
+         "1994",
+         "2007",
+         "2009"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif",
+      "title": "Qual é a principal característica do NodeJS?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+         "sua execução ser single-thread",
+         "sua execução ser multi-thread"
       ]
     }
   ],
