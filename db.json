@@ -122,7 +122,7 @@
   ],
   "external": [
     "https://aluraquiz-css.omariosouto.vercel.app/",
-    "https://aluraquiz-base-git-main.alura-challenges.vercel.app"
+    "https://aluraquiz-base.alura-challenges.vercel.app/"
   ],
   "theme": {
     "colors": {
